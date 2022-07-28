@@ -1,0 +1,109 @@
+
+@import "utilities/variables";
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100vh;
+
+    header{
+        display: flex;
+        background-color: $colorPrincipal;
+        align-items: center;
+
+        .logo{
+            width: 6rem;
+            margin: 0.6rem;
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        background-size: cover;
+        padding: 20px;
+        height: 100vh;
+
+        .menu{
+            text-align: center;
+
+            ul{
+                flex-direction: column;
+                display: flex;
+                padding: 0.1rem;
+
+                li{
+                    list-style: none;
+                    font-size: 1.5rem;
+                    margin: 0.6rem; 
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
+                    line-height: 2.5;
+
+                    :hover{
+                        transform: scale(1.3);
+                        font-size: 1.6rem;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: whitesmoke;
+                        justify-self: baseline;
+                    }
+
+                    .bySean {
+                        font-family: 'Rock Salt', cursive;
+                        font-size: 2rem;
+                        color: aliceblue;
+                        padding: 10px;
+                        text-align: end;
+                    }
+                }
+            
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        background-color: black;
+        padding: 2px;
+        grid-area: footer;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row-reverse;
+
+        h2{
+            color: rgb(165, 189, 211);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.5rem;
+            padding: 2px 5px;
+        }
+
+        div{
+            padding: 5px; 
+
+            a{
+                color: aliceblue;
+                padding: 5px;
+                font-size: 0.8rem;
+
+                img{
+
+
+                    width: 1.2rem;
+                }
+            }
+        }
+        
+    }
+}
